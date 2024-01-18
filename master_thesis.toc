@@ -15,8 +15,9 @@
 \contentsline {chapter}{\numberline {第4章}実験}{7}{}%
 \contentsline {section}{\numberline {4.1}実験方法}{7}{}%
 \contentsline {section}{\numberline {4.2}実験結果}{7}{}%
-\contentsline {chapter}{\numberline {第5章}結　言}{8}{}%
-\contentsline {section}{\numberline {5.1}結言}{8}{}%
-\contentsline {chapter}{謝　辞}{9}{}%
-\contentsline {chapter}{参考文献}{10}{}%
-\contentsline {chapter}{本研究に関する学術発表論文}{11}{}%
+\contentsline {section}{\numberline {4.3}考察}{8}{}%
+\contentsline {chapter}{\numberline {第5章}結　言}{9}{}%
+\contentsline {section}{\numberline {5.1}結言}{9}{}%
+\contentsline {chapter}{謝　辞}{10}{}%
+\contentsline {chapter}{参考文献}{11}{}%
+\contentsline {chapter}{本研究に関する学術発表論文}{12}{}%
