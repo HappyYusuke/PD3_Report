@@ -2,7 +2,7 @@
 飯田一成らの論文\cite{深層学習を用いた人追従機能の開発}では、
 リアルタイム物体検出アルゴリズムであるYOLOv5を用いて、2D-LiDARの距離データから
 人の脚部を検出している。\\ \indent
-提案手法は、\ref{2-1_Image of centroid}のように2D-LiDARの距離データを画像化し、学習したYOLOv5の物体検出により画像から
+提案手法は、Fig. \ref{2-1_Image of centroid}のように2D-LiDARの距離データを画像化し、学習したYOLOv5の物体検出により画像から
 人の脚部を検出する。複数検出する場合があるため、検出する範囲を一定の位置に設定している。
 また、衝突\\ \indent
 実験方法は、追従実験と衝突回避実験がある。追従実験ではFig. \ref{2-1_Data Acquisition Environment} 3つの経路を設定し、1回のみの試行である。
@@ -10,11 +10,7 @@
 3つの状況に分けてそれぞれ10回試行している。実験結果は、追従実験では3つの経路において20[m]
 の人追従ができていたが、雑多な環境下では追従中に停止することがあった。
 衝突回避実験ではTable \ref{2-1_Success rate of emergency stops on each road}
-に示すように、すべての試行において衝突回避ができていた。\\ \indent
-飯田一成らの手法では、雑多な環境下での追従が停止することが実験結果として挙げられており、
-課題としてYOLOv5の学習に使用するデータセットや学習モデルの改良が挙げられている。
-また、歩行速度の課題として、より速い歩行速度へ追従するため、ロボット台車の制御手法の改良
-が挙げられている。
+に示すように、すべての試行において衝突回避ができていた。
 
 \begin{figure*}[h]
   \begin{center}
@@ -26,7 +22,7 @@
 
 \begin{figure*}[h]
   \begin{center}
-  \includegraphics[height=60mm,clip]{figure/2-1_Data-Acquisition-Environment.png}
+  \includegraphics[height=80mm,clip]{figure/2-1_Data-Acquisition-Environment.png}
   \caption{Data Acquisition Environment\cite{深層学習を用いた人追従機能の開発}}
   \label{2-1_Data Acquisition Environment}
   \end{center}
@@ -49,7 +45,9 @@
     }
   \end{center}
 \end{table}
+
 \clearpage
+
 \section{2D-LiDARの距離データをクラスタリングする手法}
 Fei Luoらの研究\cite{Temporal convolutional networks for multi-person activity recognition using a 2D LIDAR}
 では、キッチン内を想定し、人が歩行した軌跡のクラスタリングを行っている。\\ \indent
@@ -68,9 +66,7 @@ CNN (Convolutional Neural Network)を用いているものである。\\ \indent
 実験方法は、学習したLSTMとTCNを用いて、Fig. \ref{2-2_Kitchen scenario}のような環境において
 15種類の歩行パターンを分類させ、LSTMとTCNの分類精度の評価を行う。
 実験結果はTable \ref{2-2_THE EFFECT OF TRAJECTORY AUGMENTATION}のようになっており、
-LSTMよりTCNのほうが分類精度が高いことが明らかになっている。\\ \indent
-Fei Luoらの手法では、人の脚部が幾何学的特徴からの検出であり、脚部に類似している物体が
-乱雑に配置されていた場合、人の脚部であると誤検出されてしまう課題が考えられる。
+LSTMよりTCNのほうが分類精度が高いことが明らかになっている。
 
 \begin{figure*}[h]
   \begin{center}
@@ -88,7 +84,7 @@ Fei Luoらの手法では、人の脚部が幾何学的特徴からの検出で�
   \end{center}
 \end{figure*}
 
-\begin{figure*}[h]
+\begin{figure*}[t]
   \begin{center}
   \includegraphics[height=50mm,clip]{figure/2-2_Kitchen-scenario.png}
   \caption{Kitchen scenario\cite{Temporal convolutional networks for multi-person activity recognition using a 2D LIDAR}}
@@ -111,3 +107,16 @@ Fei Luoらの手法では、人の脚部が幾何学的特徴からの検出で�
     }
   \end{center}
 \end{table}
+
+\clearpage
+
+\section{従来研究における課題と本プロジェクトの位置づけ}
+従来研究の課題として、2D-LiDARとYOLOv5を用いた手法では、雑多な環境下において人追従中に
+周囲の環境に影響され、特定の追従目標を追従できない点が挙げられる。また、検出範囲が固定
+であることから、人間がロボットの検出範囲に合わせながら歩行しなければならず、
+人の歩行速度の低下に伴いロボットの追従速度も低下している点が課題として挙げられる。\\ \indent
+2D-LiDARの距離データをクラスタリングする手法では、
+人の脚部が幾何学的特徴からの検出であり、脚部に類似している物体が乱雑に配置されていた場合、
+人の脚部ではない物体が誤検出されてしまう課題が考えられる。\\ \indent
+本プロジェクトでは、雑多な環境下において特定の人を追従し続けながら、
+ロボットの最大直進速度で追従し続けらるような人追従システムを提案する。
