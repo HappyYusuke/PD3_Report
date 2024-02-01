@@ -1,13 +1,3 @@
-\section{概要}
-本プロジェクトが提案する手法は、YOLOv8の物体検出モデルにより、人の脚部を検出し、
-目標座標へロボット台車を制御する人追従システムである。ソフトウェアの開発環境はUbuntu22.04
-でRobot Operating System 2 (以下ROS2) を使用した。\\ \indent
-人の脚部検出では、前処理として2D-LiDARから取得した距離データを俯瞰画像へ変換する。
-俯瞰画像をYOLOv8の物体検出モデルで学習し、学習した重みと画像を用いて人の脚部を検出する。
-ロボット台車の制御では、目標座標までの角度の偏差と距離の偏差の2つを収束させるPD制御を実装している。
-目標座標は、人の脚部を検出したときのBounding Boxの中心座標を人の座標とし、中心座標の後方に
-生成した座標を目標座標としている。
-
 \section{要求仕様}
 本プロジェクトでは、RoboCup 2023で開発したロボットであるHappy Eduを使用する。Fig 1に
 ロボットの全体図を示す。Happy Eduのロボット台車は、ROBOTISのTurtleBot3 Big Wheelであり、
@@ -17,6 +7,15 @@
 (1) 2D-LiDARのデータで人追従ができる \\
 (2) 雑多な状態の空間でも人追従ができる \\
 (3) 0.5[m/s]以下の歩行速度で追従する \\
+
+\section{システム構成}
+\begin{figure*}[h]
+    \begin{center}
+    \includegraphics[height=50mm,clip]{figure/システム構成図.png}
+    \caption{System configuration chart}
+    \label{System configuration chart}
+    \end{center}
+  \end{figure*}
 
 \section{データセットの作成}
 2D-LiDARのデータを俯瞰画像へ変換し、データセットを作成する。
