@@ -1,9 +1,9 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.12.3)  2 FEB 2024 16:21
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.12.4)  3 FEB 2024 00:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**c:/Users/h0721/OneDrive/デスクトップ/研究室/PD3_Report/master_thesis
-(c:/Users/h0721/OneDrive/デスクトップ/研究室/PD3_Report/master_thesis.tex
+**c:/Users/h0721/OneDrive/デスクトップ/大学関連/PD3_Report/master_thesis
+(c:/Users/h0721/OneDrive/デスクトップ/大学関連/PD3_Report/master_thesis.tex
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
@@ -219,27 +219,59 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
+) (c:/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (c:/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen175
+\captionmargin=\dimen176
+\caption@leftmargin=\dimen177
+\caption@rightmargin=\dimen178
+\caption@width=\dimen179
+\caption@indent=\dimen180
+\caption@parindent=\dimen181
+\caption@hangindent=\dimen182
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2-> \vskip 10pt \setbox \@tempboxa \hbox {#1: #2} \ifdim \wd \@tempboxa >\hsize \unhbox \@tempboxa \par \else \hbox to\hsize {\hfil \box \@tempboxa \hfil } \fi  on input line 1175.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count297
+\c@continuedfloat=\count298
+Package caption Info: float package is loaded.
+Package caption Info: subfigure package is loaded.
+) (c:/texlive/2023/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+LaTeX Info: Redefining \subref on input line 189.
+Package subcaption Info: The counter `subfigure' was already defined by
+(subcaption)             an unknown document class or package on input line 238.
+Package subcaption Info: The counter `subtable' was already defined by
+(subcaption)             an unknown document class or package on input line 238.
 ) (c:/texlive/2023/texmf-dist/tex/latex/ascmac/ascmac.sty
 Package: ascmac 2020/01/15 v2.1 ascmac wrapper (community edition) 
  (c:/texlive/2023/texmf-dist/tex/latex/ascmac/tascmac.sty
 Package: tascmac 2020/01/15 v2.1 ascmac package (community edition) 
-\@savetbaselineshift=\dimen175
-\@saveybaselineshift=\dimen176
+\@savetbaselineshift=\dimen183
+\@saveybaselineshift=\dimen184
 \scb@x=\box75
 \scscb@x=\box76
-\@bw=\dimen177
+\@bw=\dimen185
 \@nbox=\box77
 \@nbody=\box78
-\@scw=\dimen178
+\@scw=\dimen186
 \ascmac@hoboxa=\box79
 \ascmac@hoboxb=\box80
-\@itemh=\dimen179
+\@itemh=\dimen187
 \@iboxpos=\toks26
 \@iboxstr=\box81
 \@bwsp=\box82
 \@@bwsp=\box83
-\@bcal=\count297
-\shaderule=\dimen180
+\@bcal=\count299
+\shaderule=\dimen188
 )) (c:/texlive/2023/texmf-dist/tex/latex/txfonts/txfonts.sty
 Package: txfonts 2008/01/22 v3.2.1
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
@@ -326,22 +358,22 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
 LaTeX Font Info:    Redeclaring math symbol \mathsterling on input line 164.
 LaTeX Info: Redefining \not on input line 1043.
 ) (c:/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count298
+\lst@mode=\count300
 \lst@gtempboxa=\box84
 \lst@token=\toks27
-\lst@length=\count299
-\lst@currlwidth=\dimen181
-\lst@column=\count300
-\lst@pos=\count301
-\lst@lostspace=\dimen182
-\lst@width=\dimen183
-\lst@newlines=\count302
-\lst@lineno=\count303
-\lst@maxwidth=\dimen184
+\lst@length=\count301
+\lst@currlwidth=\dimen189
+\lst@column=\count302
+\lst@pos=\count303
+\lst@lostspace=\dimen190
+\lst@width=\dimen191
+\lst@newlines=\count304
+\lst@lineno=\count305
+\lst@maxwidth=\dimen192
  (c:/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count304
-\lst@skipnumbers=\count305
+\c@lstnumber=\count306
+\lst@skipnumbers=\count307
 \lst@framebox=\box85
 ) (c:/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2023/02/27 1.9 listings configuration
@@ -349,7 +381,7 @@ File: listings.cfg 2023/02/27 1.9 listings configuration
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
  (./jlisting.sty
 Package: jlisting 2006/02/20 0.2 (Thor)
-\lst@nextchar=\count306
+\lst@nextchar=\count308
 \lst@inputfile=\read2
 ) (c:/texlive/2023/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2023/07/08 v1.2f Bold Symbol Support (DPC/FMi)
@@ -367,89 +399,92 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) (c:/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 )
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 100.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 104.
  (c:/texlive/2023/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 ) (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 File: l3backend-dvips.def 2023-11-09 L3 backend support: dvips
 \l__pdf_internal_box=\box86
-\g__pdf_backend_object_int=\count307
+\g__pdf_backend_object_int=\count309
 \l__pdf_backend_content_box=\box87
 \l__pdf_backend_model_box=\box88
-\g__pdf_backend_annotation_int=\count308
-\g__pdf_backend_link_int=\count309
-\g__pdf_backend_link_sf_int=\count310
+\g__pdf_backend_annotation_int=\count310
+\g__pdf_backend_link_int=\count311
+\g__pdf_backend_link_sf_int=\count312
 ) (./master_thesis.aux)
 \openout1 = `master_thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 100.
-LaTeX Font Info:    Trying to load font information for OML+txmi on input line 100.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 104.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 104.
  (c:/texlive/2023/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 100.
-LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 100.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 104.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 104.
  (c:/texlive/2023/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 100.
-LaTeX Font Info:    Trying to load font information for OMX+txex on input line 100.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 104.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 104.
  (c:/texlive/2023/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 100.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 100.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 104.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 104.
  (c:/texlive/2023/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-\c@lstlisting=\count311
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count313
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <17.28> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 101.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 101.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <17.28> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 101.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 101.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.28> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 101.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 105.
 File: KIT_kosho.eps Graphic file (type eps)
 <KIT_kosho.eps>
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 101.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 105.
  (c:/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 101.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 105.
  (c:/texlive/2023/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 101.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 105.
  (c:/texlive/2023/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 101.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 105.
  (c:/texlive/2023/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 101.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 105.
  (c:/texlive/2023/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 101.
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 105.
  (c:/texlive/2023/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 ) [0
@@ -457,15 +492,15 @@ File: ts1txr.fd 2000/12/15 v3.1
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <24.88> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 105.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 109.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 105.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 109.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <24.88> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 105.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 109.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 105.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 109.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <24.88> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 105.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 109.
  (./master_thesis.toc
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <12> not available
 (Font)              Font shape `JT1/mc/bx/n' tried instead on input line 1.
@@ -486,9 +521,9 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 \openout4 = `master_thesis.toc'.
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 106.
+(Font)              No change on input line 110.
  [2] (./master_thesis.lof
-Overfull \hbox (0.52863pt too wide) in paragraph at lines 23--23
+Overfull \hbox (0.52863pt too wide) in paragraph at lines 26--26
  [][] []\OT1/txr/m/n/12 Maximum track-ing speed ex-per-i-ment en-vi-ron-ment im-age (FMT Lab-o-ra-tory Room 
  []
 
@@ -497,7 +532,7 @@ Overfull \hbox (0.52863pt too wide) in paragraph at lines 23--23
 \openout5 = `master_thesis.lof'.
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 107.
+(Font)              No change on input line 111.
  [3
 
 ] (./master_thesis.lot)
@@ -505,7 +540,7 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 \openout6 = `master_thesis.lot'.
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 108.
+(Font)              No change on input line 112.
  [4
 
 ]
@@ -517,12 +552,22 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 
 ])
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 116.
+(Font)              No change on input line 120.
  [2]
 第 2 章
 (./02_back_ground/background_overview.tex
 File: figure/2-1_Image-of-centroid.png Graphic file (type bmp)
 <figure/2-1_Image-of-centroid.png>
+LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <10.95> not available
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <10.95> not available
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10.95> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 18.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -563,7 +608,7 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 111.
  [6])
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 119.
+(Font)              No change on input line 123.
  [7
 
 ]
@@ -606,16 +651,20 @@ File: figure/yolov8-train-results.png Graphic file (type bmp)
 <figure/yolov8-train-results.png>
 File: figure/yolov8_laser_img.png Graphic file (type bmp)
 <figure/yolov8_laser_img.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 103.
- [11]
+(Font)              No change on input line 115.
+[11]
 File: figure/Target-identification-methods.png Graphic file (type bmp)
 <figure/Target-identification-methods.png>
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 131.
  [12])
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 122.
+(Font)              No change on input line 126.
  [13]
 第 4 章
 (./04_experiment/experiment.tex
@@ -629,50 +678,57 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 19.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 19.
-File: figure/Happy_Edu.png Graphic file (type bmp)
-<figure/Happy_Edu.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: figure/experimental_env1.JPG Graphic file (type bmp)
-<figure/experimental_env1.JPG>
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 70.
-[14
+(Font)              No change on input line 27.
+ [14
 
 ]
+File: figure/Happy_Edu.jpg Graphic file (type bmp)
+<figure/Happy_Edu.jpg>
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 80.
+ [15]
+File: figure/experimental_env1.JPG Graphic file (type bmp)
+<figure/experimental_env1.JPG>
 File: figure/experimental_env2.png Graphic file (type bmp)
 <figure/experimental_env2.png>
+File: figure/Straight.PNG Graphic file (type bmp)
+<figure/Straight.PNG>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+File: figure/Curve.PNG Graphic file (type bmp)
+<figure/Curve.PNG>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figure/Right-angle.PNG Graphic file (type bmp)
+<figure/Right-angle.PNG>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 129.
+[16]
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 129.
+ [17]
 File: figure/experimental_env3.JPG Graphic file (type bmp)
 <figure/experimental_env3.JPG>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: figure/max_experiment_image.JPG Graphic file (type bmp)
 <figure/max_experiment_image.JPG>
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 161.
+ [18
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+]
 File: figure/Tracking-experiment-Real-view.jpg Graphic file (type bmp)
 <figure/Tracking-experiment-Real-view.jpg>
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 105.
-[15]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: figure/Tracking-experiment-Internal-view.png Graphic file (type bmp)
 <figure/Tracking-experiment-Internal-view.png>
 
-Overfull \hbox (18.49411pt too wide) in paragraph at lines 109--110
+Overfull \hbox (18.49411pt too wide) in paragraph at lines 175--176
  [] 
  []
 
@@ -680,41 +736,36 @@ Overfull \hbox (18.49411pt too wide) in paragraph at lines 109--110
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `Result' on page 16 undefined on input line 129.
+LaTeX Warning: Reference `Result' on page 19 undefined on input line 195.
 
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 215.
+[19
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+]
 File: figure/Maximum-tracking-speed-experimental-result.png Graphic file (type bmp)
 <figure/Maximum-tracking-speed-experimental-result.png>
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+)
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 161.
-[16])
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 125.
- [17]
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 125.
- [18]
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 125.
- [19]
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 125.
+(Font)              No change on input line 129.
  [20]
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 129.
+ [21]
 第 5 章
 (./05_conclusion/conclusion.tex)
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 128.
- [21
+(Font)              No change on input line 132.
+ [22
 
 ] (./acknowledgement.tex) (./reference/reference.tex
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 1.
- [22
+ [23
 
 ]
 Overfull \hbox (48.91728pt too wide) in paragraph at lines 3--4
@@ -728,15 +779,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 44.
-[23
+[24
 
 ])
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 135.
- [24] (./academic_conference.tex)
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 139.
- [25
+ [25] (./academic_conference.tex)
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 143.
+ [26
 
 ] (./master_thesis.aux)
  ***********
@@ -750,12 +801,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5769 strings out of 474925
- 87808 string characters out of 5765770
- 1928403 words of memory out of 5000000
- 27811 multiletter control sequences out of 15000+600000
- 600448 words of font info for 168 fonts, out of 8000000 for 9000
+ 7207 strings out of 474925
+ 115775 string characters out of 5765770
+ 1926403 words of memory out of 5000000
+ 29237 multiletter control sequences out of 15000+600000
+ 602541 words of font info for 174 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 57i,15n,69p,531b,366s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,15n,69p,533b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on master_thesis.dvi (30 pages, 63844 bytes).
+Output written on master_thesis.dvi (31 pages, 70488 bytes).

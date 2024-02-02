@@ -8,7 +8,7 @@
 実験では、雑多な環境を作成し追従実験と最大追従速度実験をする。
 実験中は、人は追従対象の1人のみとする。\\ \indent
 要求仕様(2)を検証するため、追従実験では直線経路、曲線経路、直角経路をそれぞれ10回実験し、
-成功率を算出する。追従の成功率が平均90\%以上であった場合に要求仕様(2)を満たしたものとする。
+成功率を算出する。追従の成功率が各経路において90\%以上であった場合に要求仕様(2)を満たしたものとする。
 また、要求仕様(3)を検証するため、10[m]以上の直線経路にて最大追従速度実験をする。
 0.1[m/s]から、0.1ずつ速度を上昇させ、追従できなくなる速度の直前を最大追従速度とする。
 Turtlebot3 Big Wheelの最大直進速度が0.5[m/s]であるため、開発した人追従システムの
@@ -17,9 +17,17 @@ Turtlebot3 Big Wheelの最大直進速度が0.5[m/s]であるため、開発し�
 要求仕様(1)も満たされたものとする。
 
 \subsection{実験機材}
+本プロジェクトでは、2023年に開催されたRoboCup2023で開発したHappy Eduを使用する。
+Happy Eduの全体像をFig. \ref{Happy Edu}に示す。Happy Eduのロボット台車には、
+ROBOTIS社の二輪差動駆動台車であるTurtleBot3 Big Wheelを用いてる。2D-LiDARには、
+北洋電機株式会社のUTM30-LXを用いている。ロボットに搭載するノートPCは、ASUSの
+ROG Strix G16を用いている。本プロジェクトでは、ロボット台車、2D-LiDAR、ロボット用
+ノートPCの3つを使用するため、Table \ref{Happy Edu specifications}にそれぞれの仕様
+を示す。
+
 \begin{figure*}[h]
   \begin{center}
-  \includegraphics[width=30mm,clip]{figure/Happy_Edu.png}
+  \includegraphics[width=60mm,clip]{figure/Happy_Edu.jpg}
   \caption{Happy Edu}
   \label{Happy Edu}
   \end{center}
@@ -31,7 +39,7 @@ Turtlebot3 Big Wheelの最大直進速度が0.5[m/s]であるため、開発し�
     \scalebox{0.8}[0.9]{
       \begin{tabular}{c|c|c} \hline
         Type of equipment & Product name & Specifications \\ \hline
-        Robot base & Turtlebot3 Big Wheel & 
+        Robot base & TurtleBot3 Big Wheel & 
         \begin{tabular}{c}
         Maximum straight speed: 0.6[m/s]\\
         Maximum rotation speed: 3.14[rad/s]\\
@@ -58,12 +66,29 @@ Turtlebot3 Big Wheelの最大直進速度が0.5[m/s]であるため、開発し�
   \end{center}
 \end{table}
 
-\subsection{実験環境}
-
 \subsection{追従実験}
+要求仕様(2)を検証するため、
+Fig. \ref{Image of tracking experiment environment (FMT Laboratory Room 206)}と
+Fig. \ref{Image of tracking experiment environment (FMT Laboratory Room 326)}
+のような雑多な環境を用意し、追従の成否を実験する。
+雑多な環境の用意では、人の脚部と類似している椅子やポールなどの円柱状の物体を多く
+設置している。\\ \indent
+直線経路、曲線経路、直角経路のイメージをそれぞれ
+Fig. \ref{Straight road}、Fig. \ref{Curved road}、Fig. \ref{Right angle road}に示す。
+直線経路、曲線経路、直角経路においてそれぞれ10回ずつ試行し、各径路での追従成功率を算出する。
+追従が成功した回数を$x_{success}$とした時の追従成功率$success \; rate$は以下のようになる。
+
+\begin{equation}
+\label{Success rate}
+  success \; rate = x_{success} / 10
+\end{equation}
+
+(\ref{Success rate})式を用いて各径路での成功率を算出し、それぞれの成功率が90[\%]以上
+であれば要求仕様(2)を満たしたこととする。
+
 \begin{figure*}[h]
   \begin{center}
-  \includegraphics[width=100mm,clip]{figure/experimental_env1.JPG}
+  \includegraphics[width=90mm,clip]{figure/experimental_env1.JPG}
   \caption{Image of tracking experiment environment (FMT Laboratory Room 206)}
   \label{Image of tracking experiment environment (FMT Laboratory Room 206)}
   \end{center}
@@ -71,16 +96,55 @@ Turtlebot3 Big Wheelの最大直進速度が0.5[m/s]であるため、開発し�
 
 \begin{figure*}[h]
   \begin{center}
-  \includegraphics[width=100mm,clip]{figure/experimental_env2.png}
+  \includegraphics[width=90mm,clip]{figure/experimental_env2.png}
   \caption{Image of tracking experiment environment (FMT Laboratory Room 326)}
   \label{Image of tracking experiment environment (FMT Laboratory Room 326)}
   \end{center}
 \end{figure*}
 
-\subsection{最大追従速度実験}
 \begin{figure*}[h]
   \begin{center}
-  \includegraphics[width=100mm, angle=-90, clip]{figure/experimental_env3.JPG}
+  \includegraphics[width=100mm,clip]{figure/Straight.PNG}
+  \caption{Straight road}
+  \label{Straight road}
+  \end{center}
+\end{figure*}
+
+\begin{figure*}[h]
+  \begin{center}
+  \includegraphics[width=100mm,clip]{figure/Curve.PNG}
+  \caption{Curved road}
+  \label{Curved road}
+  \end{center}
+\end{figure*}
+
+\begin{figure*}[h]
+  \begin{center}
+  \includegraphics[width=100mm,clip]{figure/Right-angle.PNG}
+  \caption{Right angle road}
+  \label{Right angle road}
+  \end{center}
+\end{figure*}
+
+\clearpage
+
+\subsection{最大追従速度実験}
+要求仕様(3)を検証するため、
+Fig. \ref{Maximum tracking speed experiment environment image (FMT Laboratory Room 326)}
+のような10[m]の直線経路を用意し最大追従速度を計測する。実験する速度は0.1[m/s]から開始し、
+0.1ずつ速度を上昇させ、Happy Eduが追従できなくなった場合の1つ前の速度を最大追従速度とする。
+追従の成否は、Happy Eduが追従対象者を10[m]以上追従したことを追従成功とする。
+また、Happy Eduの追従速度は追従対象者の歩行速度に依存しており、
+追従対象者の歩行速度を指定した速度にする必要がある。
+そのため、Fig. \ref{Image of maximum tracking speed experiment}のような構成で実験
+する。0.1[m/s]の場合であれば、Fig. \ref{Image of maximum tracking speed experiment}
+の「Speed keeper」を0.1[m/s]で直進させ、「Speed keeper」に追従対象者が追従する。さらに、
+追従対象者にHappy Eduが追従することで、指定した速度での実験をする。これを、0.1[m/s]から
+開始し、Happy Eduが追従できなくなるまで試行を繰り返す。
+
+\begin{figure*}[h]
+  \begin{center}
+  \includegraphics[width=80mm,clip]{figure/experimental_env3.JPG}
   \caption{Maximum tracking speed experiment environment image (FMT Laboratory Room 326)}
   \label{Maximum tracking speed experiment environment image (FMT Laboratory Room 326)}
   \end{center}
@@ -88,11 +152,13 @@ Turtlebot3 Big Wheelの最大直進速度が0.5[m/s]であるため、開発し�
 
 \begin{figure*}[h]
   \begin{center}
-  \includegraphics[width=100mm,clip]{figure/max_experiment_image.JPG}
+  \includegraphics[width=90mm,clip]{figure/max_experiment_image.JPG}
   \caption{Image of maximum tracking speed experiment}
   \label{Image of maximum tracking speed experiment}
   \end{center}
 \end{figure*}
+
+\clearpage
 
 \section{実験結果}
 \subsection{追従実験}

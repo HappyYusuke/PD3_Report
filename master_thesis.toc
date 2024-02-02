@@ -17,15 +17,14 @@
 \contentsline {section}{\numberline {4.1}実験目的}{14}{}%
 \contentsline {section}{\numberline {4.2}実験方法}{14}{}%
 \contentsline {subsection}{\numberline {4.2.1}実験機材}{15}{}%
-\contentsline {subsection}{\numberline {4.2.2}実験環境}{15}{}%
-\contentsline {subsection}{\numberline {4.2.3}追従実験}{15}{}%
-\contentsline {subsection}{\numberline {4.2.4}最大追従速度実験}{16}{}%
-\contentsline {section}{\numberline {4.3}実験結果}{16}{}%
-\contentsline {subsection}{\numberline {4.3.1}追従実験}{16}{}%
-\contentsline {subsection}{\numberline {4.3.2}最大追従速度実験}{17}{}%
-\contentsline {section}{\numberline {4.4}考察}{17}{}%
-\contentsline {chapter}{\numberline {第5章}結　言}{21}{}%
-\contentsline {section}{\numberline {5.1}結言}{21}{}%
-\contentsline {chapter}{謝　辞}{22}{}%
-\contentsline {chapter}{参考文献}{23}{}%
-\contentsline {chapter}{本研究に関する学術発表論文}{25}{}%
+\contentsline {subsection}{\numberline {4.2.2}追従実験}{16}{}%
+\contentsline {subsection}{\numberline {4.2.3}最大追従速度実験}{18}{}%
+\contentsline {section}{\numberline {4.3}実験結果}{19}{}%
+\contentsline {subsection}{\numberline {4.3.1}追従実験}{19}{}%
+\contentsline {subsection}{\numberline {4.3.2}最大追従速度実験}{20}{}%
+\contentsline {section}{\numberline {4.4}考察}{20}{}%
+\contentsline {chapter}{\numberline {第5章}結　言}{22}{}%
+\contentsline {section}{\numberline {5.1}結言}{22}{}%
+\contentsline {chapter}{謝　辞}{23}{}%
+\contentsline {chapter}{参考文献}{24}{}%
+\contentsline {chapter}{本研究に関する学術発表論文}{26}{}%

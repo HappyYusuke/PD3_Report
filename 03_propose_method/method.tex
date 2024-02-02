@@ -129,10 +129,11 @@ YOLOv8には、Byte Trackなどの追跡アルゴリズムが標準機能で搭�
 未満である場合に積分制御を開始する時刻を$t_1$としたとき、
 ロボット台車の旋回速度の制御量$u_{angle}(t)$は以下のようになる。
 \begin{equation}
-u_{angle}(t) = K_{AP} \cdot \theta(t)+ K_{AI} \cdot \int_{t_1}^{t-t_1} \theta(t) dt + K_{AD} \cdot \left\{ \frac{d}{dt} \theta(t) - \omega(t) \right\}
+\label{angularPID}
+u_{angle}(t) = K_{AP} \cdot \theta(t)+ K_{AI} \cdot \int_{t_1}^{t-t_1} \theta(\tau) dt + K_{AD} \cdot \left\{ \frac{d}{dt} \theta(t) - \omega(t) \right\}
 \end{equation}
 $K_{AP}$、$K_{AI}$、$K_{AD}$は調整パラメータであり、$K_{AP}$は0.005、$K_{AI}$は0.0002、
-$K_{AD}$は0.0009で設定している。(3.1)式の第1項は、ロボットの座標から目標座標
+$K_{AD}$は0.0009で設定している。(\ref{angularPID})式の第1項は、ロボットの座標から目標座標
 までの角度の偏差を比例制御している。第2項は、ロボットが追従対象者の方向を定常偏差なく向く
 ため、目標座標までの角度の偏差を積分制御している。第3項では、実機での制御を考慮し、
 不足しているまたは過多な制御量を微分制御により調整している。積分制御を常にしていないのは、
@@ -141,8 +142,9 @@ $K_{AD}$は0.0009で設定している。(3.1)式の第1項は、ロボットの
 また、追従目標への距離の偏差を$L(t)$としたとき、ロボット台車の直進速度の制御量$u_{linear}(t)$
 は以下のようになる。
 \begin{equation}
-    u_{linear}(t) = K_{LP} \cdot L(t)
+\label{linearPID}
+u_{linear}(t) = K_{LP} \cdot L(t)
 \end{equation}
-$K_{LP}$は調整パラメータである。(3.2)式は、追従目標への距離の偏差を比例制御しており、
+$K_{LP}$は調整パラメータである。(\ref{linearPID})式は、追従目標への距離の偏差を比例制御しており、
 $K_{LP}$は0.3で設定している。
 
