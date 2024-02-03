@@ -30,4 +30,4 @@
 \contentsline {section}{\numberline {5.1}結言}{30}{}%
 \contentsline {chapter}{謝　辞}{31}{}%
 \contentsline {chapter}{参考文献}{32}{}%
-\contentsline {chapter}{本研究に関する学術発表論文}{34}{}%
+\contentsline {chapter}{付録}{34}{}%
