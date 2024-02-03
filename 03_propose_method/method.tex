@@ -1,14 +1,28 @@
+\section{概要}
+本プロジェクトでは、雑多な環境下で人追従でき、ロボットの最大直進速度で追従するため、
+2D-LiDARの距離データとリアルタイム物体検出アルゴリズムであるYOLOv8を用いた人追従システムを開発する。
+本プロジェクトで提案する人追従システムは、追従対象者のみがいる雑多な環境を想定している。
+雑多な環境では、人の脚部と形状が類似している椅子やポールなどの物体をランダムに多数
+設置している。2D-LiDARから提供される距離データを俯瞰画像に変換し、
+学習したYOLOv8と俯瞰画像を用いて追従対象者の検出をする。追従対象者の検出のみでは、
+周囲の物体を両脚部と誤検出する可能性があるため、追従目標の特定処理をシステムに組み込む
+ことで、正確に追従対象者を追従することを実現する。
+
 \section{要求仕様}
-本プロジェクトでは、雑多な環境下においてロボットの最大直進速度で追従できる人追従システムの
+本プロジェクトでは、雑多な環境下で人追従でき、ロボットの最大直進速度で追従できる人追従システムの
 開発を目的としているため、以下の構成で要求仕様を設定する。
-2023年に開催されたRoboCup 2023で開発したロボットであるHappy Eduを使用する。
-Happy Eduのロボット台車は、ROBOTISのTurtleBot3 Big Wheelであり、
-ロボット台車の前方に2D-LiDARを搭載している。2D-LiDARは、北表電気株式会社のUTM30-LXを使用
-している。制御PCは、NVIDIA GeForce RTX 4070 8GB を搭載しているノートPCを選定した。\\ \indent
+使用するロボットは、2023年に開催されたRoboCup 2023で開発したロボットである
+Happy Eduを使用する。Happy Eduのロボット台車は、ROBOTISのTurtleBot3 Big Wheelであり、
+ロボット台車の前方に2D-LiDARを搭載している。
+2D-LiDARは、北表電気株式会社のUTM30-LXを使用しており、制御PCは、
+NVIDIA GeForce RTX 4070 8GB を搭載しているノートPCを選定した。\\ \indent
 以上の構成で以下の要求仕様を設定する。\\
-(1) 2D-LiDARのデータで人追従ができる \\
-(2) 雑多な状態の空間でも人追従ができる \\
-(3) 0.5[m/s]以下の歩行速度で追従する \\
+
+\begin{enumerate}
+\item 2D-LiDARのデータで人追従ができる \\
+\item 雑多な状態の空間でも人追従ができる \\
+\item 0.5[m/s]以下の歩行速度で追従する \\
+\end{enumerate}
 
 \section{システム構成}
 本プロジェクトでは、Fig. \ref{System configuration chart}のような人追従システムを提案する。
@@ -19,7 +33,7 @@ Happy Eduのロボット台車は、ROBOTISのTurtleBot3 Big Wheelであり、
 
 \begin{figure*}[h]
     \begin{center}
-    \includegraphics[height=80mm,clip]{figure/System-configration-chart.png}
+    \includegraphics[height=90mm,clip]{figure/System-configration-chart.png}
     \caption{System configuration chart}
     \label{System configuration chart}
     \end{center}
@@ -41,15 +55,15 @@ Robot Operationg System 2 (以下、ROS2)を用いている。ロボットのソ
     \item base\_controller Node: 目標座標までの距離と角度の偏差をPID制御により収束させる。
 \end{itemize}
 
-\clearpage
-
-\begin{figure*}[t]
+\begin{figure*}[h]
     \begin{center}
     \includegraphics[height=80mm,clip]{figure/Software.jpg}
     \caption{Software configuration diagram}
     \label{Software configuration diagram}
     \end{center}
 \end{figure*}
+
+\clearpage
 
 \section{データセットの作成}
 2D-LiDARのデータをFig. \ref{Example of an overhead view image}のように俯瞰画像へ変換し、
@@ -96,7 +110,7 @@ PCを使用し、バッチサイズは12、エポック数は500で学習を行�
 
 \begin{figure*}[h]
     \begin{center}
-    \includegraphics[height=40mm,clip]{figure/yolov8_laser_img.png}
+    \includegraphics[height=60mm,clip]{figure/yolov8_laser_img.png}
     \caption{Example of inference results with YOLOv8 using learned weights}
     \label{Example of inference results with YOLOv8 using learned weights}
     \end{center}
@@ -115,11 +129,13 @@ YOLOv8には、Byte Trackなどの追跡アルゴリズムが標準機能で搭�
 
 \begin{figure*}[h]
     \begin{center}
-    \includegraphics[height=70mm,clip]{figure/Target-identification-methods.png}
+    \includegraphics[height=100mm,clip]{figure/Target-identification-methods.png}
     \caption{Target identification methods}
     \label{Target identification methods}
     \end{center}
 \end{figure*}
+
+\clearpage
 
 \section{ロボット台車の制御}
 追従目標の特定により、追従目標のバウンディングボックスの中心から後方に定数で目標座標を生成

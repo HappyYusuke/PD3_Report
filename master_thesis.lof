@@ -8,26 +8,36 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Human recognition\cite {Temporal convolutional networks for multi-person activity recognition using a 2D LIDAR}}}{5}{}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces LIDAR data processing\cite {Temporal convolutional networks for multi-person activity recognition using a 2D LIDAR}}}{6}{}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Kitchen scenario\cite {Temporal convolutional networks for multi-person activity recognition using a 2D LIDAR}}}{6}{}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Architecture of the CNN used by PeTra \cite {Tracking People in a Mobile Robot From 2D LIDAR Scans Using Full Convolutional Neural Networks for Security in Cluttered Environments}}}{7}{}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Robotics mobile lab plan (left), Orbi-One robot (center), and KIO RTLS anchors (right). \cite {Tracking People in a Mobile Robot From 2D LIDAR Scans Using Full Convolutional Neural Networks for Security in Cluttered Environments}}}{8}{}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Comparison image of PeTra and LD by Rviz \cite {Tracking People in a Mobile Robot From 2D LIDAR Scans Using Full Convolutional Neural Networks for Security in Cluttered Environments}}}{8}{}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Person following in environments with obstacles \cite {A Robust Autonomous Following Method for Mobile Robots in Dynamic Environments}}}{10}{}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces The architecture of our person-following system \cite {A Robust Autonomous Following Method for Mobile Robots in Dynamic Environments}}}{10}{}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Human legs detection and human tracking \cite {A Robust Autonomous Following Method for Mobile Robots in Dynamic Environments}}}{10}{}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces AOA tracking trajectory and Kalman filter trajectory \cite {A Robust Autonomous Following Method for Mobile Robots in Dynamic Environments}}}{11}{}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Laser tracking trajectory and Kalman filter trajector \cite {A Robust Autonomous Following Method for Mobile Robots in Dynamic Environments}}}{11}{}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Kalman filter tracking in occluded environments \cite {A Robust Autonomous Following Method for Mobile Robots in Dynamic Environments}}}{12}{}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Following trajectory in environments with obstacles \cite {A Robust Autonomous Following Method for Mobile Robots in Dynamic Environments}}}{12}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces System configuration chart}}{9}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Software configuration diagram}}{10}{}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of an overhead view image}}{10}{}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Example data sets}}{11}{}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Training results}}{11}{}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Example of inference results with YOLOv8 using learned weights}}{12}{}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Target identification methods}}{12}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces System configuration chart}}{15}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Software configuration diagram}}{16}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of an overhead view image}}{17}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Example data sets}}{17}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Training results}}{18}{}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Example of inference results with YOLOv8 using learned weights}}{18}{}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Target identification methods}}{19}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Happy Edu}}{15}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Image of tracking experiment environment (FMT Laboratory Room 206)}}{16}{}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Image of tracking experiment environment (FMT Laboratory Room 326)}}{16}{}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Straight road}}{17}{}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Curved road}}{17}{}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Right angle road}}{17}{}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Maximum tracking speed experiment environment image (FMT Laboratory Room 326)}}{18}{}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Image of maximum tracking speed experiment}}{18}{}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Tracking experiment (Real view)}}{19}{}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Tracking experiment (Internal view)}}{19}{}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Tracking speed graph}}{21}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Happy Edu}}{22}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Image of tracking experiment environment (FMT Laboratory Room 206)}}{24}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Image of tracking experiment environment (FMT Laboratory Room 326)}}{24}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Straight road}}{25}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Curved road}}{25}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Right angle road}}{25}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Maximum tracking speed experiment environment image (FMT Laboratory Room 326)}}{26}{}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Image of maximum tracking speed experiment}}{26}{}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Tracking experiment (Real view)}}{27}{}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Tracking experiment (Internal view)}}{27}{}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Tracking speed graph}}{28}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.12.4)  3 FEB 2024 00:14
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.12.4)  4 FEB 2024 05:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -523,7 +523,12 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 110.
  [2] (./master_thesis.lof
-Overfull \hbox (0.52863pt too wide) in paragraph at lines 26--26
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 33.
+ [3
+
+]
+Overfull \hbox (0.52863pt too wide) in paragraph at lines 36--36
  [][] []\OT1/txr/m/n/12 Maximum track-ing speed ex-per-i-ment en-vi-ron-ment im-age (FMT Lab-o-ra-tory Room 
  []
 
@@ -533,24 +538,22 @@ Overfull \hbox (0.52863pt too wide) in paragraph at lines 26--26
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 111.
- [3
-
-] (./master_thesis.lot)
+ [4] (./master_thesis.lot)
 \tf@lot=\write6
 \openout6 = `master_thesis.lot'.
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 112.
- [4
+ [5
 
 ]
 第 1 章
-(./01_introduction/intro.tex
+(./01_introduction/intro.tex)
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 29.
+(Font)              No change on input line 120.
  [1
 
-])
+]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 120.
  [2]
@@ -594,9 +597,6 @@ Overfull \hbox (13.42253pt too wide) in paragraph at lines 73--74
 
 File: figure/2-2_LIDAR-data-processing.png Graphic file (type bmp)
 <figure/2-2_LIDAR-data-processing.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: figure/2-2_Kitchen-scenario.png Graphic file (type bmp)
 <figure/2-2_Kitchen-scenario.png>
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
@@ -606,95 +606,184 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 ]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 111.
- [6])
+ [6]
+File: figure/2-4_cnn.png Graphic file (type bmp)
+<figure/2-4_cnn.png>
+File: figure/2-4_env.png Graphic file (type bmp)
+<figure/2-4_env.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figure/2-4_result.png Graphic file (type bmp)
+<figure/2-4_result.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 181.
+[7
+
+]
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 181.
+ [8]
+File: figure/2-3_real.png Graphic file (type bmp)
+<figure/2-3_real.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figure/2-3_system.png Graphic file (type bmp)
+<figure/2-3_system.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figure/2-3_overview.png Graphic file (type bmp)
+<figure/2-3_overview.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figure/2-3_aoa.png Graphic file (type bmp)
+<figure/2-3_aoa.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figure/2-3_laser.png Graphic file (type bmp)
+<figure/2-3_laser.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figure/2-3_aoaANDlaser.png Graphic file (type bmp)
+<figure/2-3_aoaANDlaser.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figure/2-3_result.png Graphic file (type bmp)
+<figure/2-3_result.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 298.
+[9
+
+]
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 298.
+ [10]
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 298.
+ [11]
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 298.
+ [12])
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 123.
- [7
+ [13
 
 ]
 第 3 章
 (./03_propose_method/method.tex
-File: figure/System-configration-chart.png Graphic file (type bmp)
-<figure/System-configration-chart.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 36.
-[8
+(Font)              No change on input line 23.
+ [14
 
 ]
+File: figure/System-configration-chart.png Graphic file (type bmp)
+<figure/System-configration-chart.png>
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 44.
- [9]
+(Font)              No change on input line 50.
+ [15]
 File: figure/Software.jpg Graphic file (type bmp)
 <figure/Software.jpg>
 
-Overfull \hbox (30.3155pt too wide) in paragraph at lines 48--49
+Overfull \hbox (30.3155pt too wide) in paragraph at lines 60--61
  [] 
  []
 
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 66.
+[16]
 File: figure/laser_img_232.jpg Graphic file (type bmp)
 <figure/laser_img_232.jpg>
 File: figure/Example-data-sets.png Graphic file (type bmp)
 <figure/Example-data-sets.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 88.
-[10
+(Font)              No change on input line 102.
+ [17
 
 ]
 File: figure/yolov8-train-results.png Graphic file (type bmp)
 <figure/yolov8-train-results.png>
 File: figure/yolov8_laser_img.png Graphic file (type bmp)
 <figure/yolov8_laser_img.png>
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 129.
+ [18]
+File: figure/Target-identification-methods.png Graphic file (type bmp)
+<figure/Target-identification-methods.png>
+
+Overfull \hbox (40.63727pt too wide) in paragraph at lines 132--133
+ [] 
+ []
+
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 138.
+[19])
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 126.
+ [20
+
+]
+第 4 章
+(./04_experiment/experiment.tex
+LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <14.4> not available
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <14.4> not available
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 20.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 29.
+ [21
+
+]
+File: figure/Happy_Edu.jpg Graphic file (type bmp)
+<figure/Happy_Edu.jpg>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 115.
-[11]
-File: figure/Target-identification-methods.png Graphic file (type bmp)
-<figure/Target-identification-methods.png>
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 131.
- [12])
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 126.
- [13]
-第 4 章
-(./04_experiment/experiment.tex
-LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 19.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 19.
-LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 19.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 19.
-LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 19.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 27.
- [14
-
-]
-File: figure/Happy_Edu.jpg Graphic file (type bmp)
-<figure/Happy_Edu.jpg>
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 80.
- [15]
+(Font)              No change on input line 102.
+[22]
 File: figure/experimental_env1.JPG Graphic file (type bmp)
 <figure/experimental_env1.JPG>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: figure/experimental_env2.png Graphic file (type bmp)
 <figure/experimental_env2.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: figure/Straight.PNG Graphic file (type bmp)
 <figure/Straight.PNG>
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -709,18 +798,21 @@ File: figure/Right-angle.PNG Graphic file (type bmp)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 129.
-[16]
+(Font)              No change on input line 151.
+[23]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 129.
- [17]
+(Font)              No change on input line 151.
+ [24]
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
+(Font)              No change on input line 151.
+ [25]
 File: figure/experimental_env3.JPG Graphic file (type bmp)
 <figure/experimental_env3.JPG>
 File: figure/max_experiment_image.JPG Graphic file (type bmp)
 <figure/max_experiment_image.JPG>
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 161.
- [18
+(Font)              No change on input line 183.
+ [26
 
 ]
 File: figure/Tracking-experiment-Real-view.jpg Graphic file (type bmp)
@@ -728,44 +820,34 @@ File: figure/Tracking-experiment-Real-view.jpg Graphic file (type bmp)
 File: figure/Tracking-experiment-Internal-view.png Graphic file (type bmp)
 <figure/Tracking-experiment-Internal-view.png>
 
-Overfull \hbox (18.49411pt too wide) in paragraph at lines 175--176
- [] 
+Overfull \hbox (62.47154pt too wide) in paragraph at lines 222--223
+ [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `Result' on page 19 undefined on input line 195.
-
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
-(Font)              No change on input line 215.
-[19
+(Font)              No change on input line 245.
+[27
 
 ]
 File: figure/Maximum-tracking-speed-experimental-result.png Graphic file (type bmp)
 <figure/Maximum-tracking-speed-experimental-result.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 )
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 129.
- [20]
+ [28]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 129.
- [21]
+ [29]
 第 5 章
 (./05_conclusion/conclusion.tex)
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 132.
- [22
+ [30
 
 ] (./acknowledgement.tex) (./reference/reference.tex
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 1.
- [23
+ [31
 
 ]
 Overfull \hbox (48.91728pt too wide) in paragraph at lines 3--4
@@ -779,15 +861,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 44.
-[24
+[32
 
 ])
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 139.
- [25] (./academic_conference.tex)
+ [33] (./academic_conference.tex)
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/sl' undefined
 (Font)              No change on input line 143.
- [26
+ [34
 
 ] (./master_thesis.aux)
  ***********
@@ -795,18 +877,14 @@ pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 7207 strings out of 474925
- 115775 string characters out of 5765770
- 1926403 words of memory out of 5000000
- 29237 multiletter control sequences out of 15000+600000
+ 7284 strings out of 474925
+ 117648 string characters out of 5765770
+ 1928403 words of memory out of 5000000
+ 29304 multiletter control sequences out of 15000+600000
  602541 words of font info for 174 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 57i,15n,69p,533b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,10n,69p,516b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on master_thesis.dvi (31 pages, 70488 bytes).
+Output written on master_thesis.dvi (40 pages, 97432 bytes).
