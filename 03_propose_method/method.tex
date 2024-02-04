@@ -12,9 +12,9 @@
 本プロジェクトでは、雑多な環境下で人追従でき、ロボットの最大直進速度で追従できる人追従システムの
 開発を目的としているため、以下の構成で要求仕様を設定する。
 使用するロボットは、2023年に開催されたRoboCup 2023で開発したロボットである
-Happy Eduを使用する。Happy Eduのロボット台車は、ROBOTISのTurtleBot3 Big Wheelであり、
+Happy Eduを使用する。Happy Eduのロボット台車は、ROBOTIS社のTurtleBot3 Big Wheelであり、
 ロボット台車の前方に2D-LiDARを搭載している。
-2D-LiDARは、北表電気株式会社のUTM30-LXを使用しており、制御PCは、
+2D-LiDARは、北陽電機株式会社のUTM30-LXを使用しており、ロボットに搭載するPCは、
 NVIDIA GeForce RTX 4070 8GB を搭載しているノートPCを選定した。\\ \indent
 以上の構成で以下の要求仕様を設定する。\\
 
@@ -68,7 +68,7 @@ Robot Operationg System 2 (以下、ROS2)を用いている。ロボットのソ
 \section{データセットの作成}
 2D-LiDARのデータをFig. \ref{Example of an overhead view image}のように俯瞰画像へ変換し、
 データセットを作成する。データセットを作成するときの環境は、ロボットが静止した状態において、
-タイとパンツとワイドパンツを履いた2人が大股や小股などで歩行し、歩行パターンはランダムである。
+タイトパンツとワイドパンツを着用している2人が大股や小股などで歩行し、歩行パターンはランダムである。
 これを5分間行い、俯瞰画像をトピック通信で発信し続け、ROS2 Bagを保存する。ROS2 Bagは、
 ROS2におけるトピックの保存機能である。ROS2 Bagのデータをから12032枚の画像データを生成し、
 人の脚部をpersonクラスとしてアノテーションを行った。Fig. \ref{Example data sets}
@@ -98,11 +98,13 @@ ROS2におけるトピックの保存機能である。ROS2 Bagのデータを�
 学習モデルの初期重みは、ロボットに搭載するノートPCの性能が高いため、最もパラメータ数
 の多いYOLOv8xを選定した。学習するPCは、NVIDIA GeForce RTX 4090 16GBを搭載している
 PCを使用し、バッチサイズは12、エポック数は500で学習を行った。過学習を防ぐため、
-過学習が発生する直前または発生したらすぐに学習を終了させる処理を100エポック以降でを設定した。
+過学習が発生する直前または発生したらすぐに学習を終了させる処理を100エポック以降で設定した。
+学習結果は、Fig. \ref{Training results}とFig. \ref{Example of inference results with YOLOv8 using learned weights}
+のようになっており、推論結果が90[\%]を超えていることが分かる。
 
 \begin{figure*}[h]
     \begin{center}
-    \includegraphics[height=80mm,clip]{figure/yolov8-train-results.png}
+    \includegraphics[height=70mm,clip]{figure/yolov8-train-results.png}
     \caption{Training results}
     \label{Training results}
     \end{center}
@@ -124,7 +126,7 @@ YOLOv8には、Byte Trackなどの追跡アルゴリズムが標準機能で搭�
 本プロジェクトで実装した追従目標の特定方法をFig. \ref{Target identification methods}
 に示す。1フレーム前における追従目標のバウンディングボックスを中心とした、半径0.5[m]の
 円型範囲を現在のフレームに設定し、範囲内にバウンディングボックスの中心があればそれを
-追従対象とする。円型範囲の半径は、ROS2のパラメータ通信で実装しているため、動的な値の変更が
+追従対象とする。円型範囲の半径は、ROS2のパラメータ通信で実装しているため、値を動的に変更
 可能であり、歩行速度に合わせて円型範囲を拡大縮小することが可能である。
 
 \begin{figure*}[h]
@@ -146,7 +148,7 @@ YOLOv8には、Byte Trackなどの追跡アルゴリズムが標準機能で搭�
 ロボット台車の旋回速度の制御量$u_{angle}(t)$は以下のようになる。
 \begin{equation}
 \label{angularPID}
-u_{angle}(t) = K_{AP} \cdot \theta(t)+ K_{AI} \cdot \int_{t_1}^{t-t_1} \theta(\tau) dt + K_{AD} \cdot \left\{ \frac{d}{dt} \theta(t) - \omega(t) \right\}
+u_{angle}(t) = K_{AP} \cdot \theta(t)+ K_{AI} \cdot \int_{t_1}^{t-t_1} \theta(\tau) d\tau + K_{AD} \cdot \left\{ \frac{d}{dt} \theta(t) - \omega(t) \right\}
 \end{equation}
 $K_{AP}$、$K_{AI}$、$K_{AD}$は調整パラメータであり、$K_{AP}$は0.005、$K_{AI}$は0.0002、
 $K_{AD}$は0.0009で設定している。(\ref{angularPID})式の第1項は、ロボットの座標から目標座標
@@ -155,11 +157,11 @@ $K_{AD}$は0.0009で設定している。(\ref{angularPID})式の第1項は、�
 不足しているまたは過多な制御量を微分制御により調整している。積分制御を常にしていないのは、
 角度の偏差が大きくなった場合に、積分値が時間経過に伴い過多になりすぎることで、
 ロボットが左右に振動してしまうからである。\\ \indent
-また、追従目標への距離の偏差を$L(t)$としたとき、ロボット台車の直進速度の制御量$u_{linear}(t)$
+また、追従目標への距離の偏差を$l(t)$としたとき、ロボット台車の直進速度の制御量$u_{linear}(t)$
 は以下のようになる。
 \begin{equation}
 \label{linearPID}
-u_{linear}(t) = K_{LP} \cdot L(t)
+u_{linear}(t) = K_{LP} \cdot l(t)
 \end{equation}
 $K_{LP}$は調整パラメータである。(\ref{linearPID})式は、追従目標への距離の偏差を比例制御しており、
 $K_{LP}$は0.3で設定している。

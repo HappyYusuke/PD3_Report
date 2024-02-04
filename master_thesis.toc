@@ -26,8 +26,9 @@
 \contentsline {subsection}{\numberline {4.3.1}追従実験}{27}{}%
 \contentsline {subsection}{\numberline {4.3.2}最大追従速度実験}{28}{}%
 \contentsline {section}{\numberline {4.4}考察}{29}{}%
-\contentsline {chapter}{\numberline {第5章}結　言}{30}{}%
-\contentsline {section}{\numberline {5.1}結言}{30}{}%
+\contentsline {chapter}{\numberline {第5章}結　論}{30}{}%
+\contentsline {section}{\numberline {5.1}まとめ}{30}{}%
+\contentsline {section}{\numberline {5.2}今後の課題}{30}{}%
 \contentsline {chapter}{謝　辞}{31}{}%
 \contentsline {chapter}{参考文献}{32}{}%
 \contentsline {chapter}{付録}{34}{}%

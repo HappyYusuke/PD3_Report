@@ -3,11 +3,10 @@
 リアルタイム物体検出アルゴリズムであるYOLOv5を用いて、2D-LiDARの距離データから
 人の脚部を検出している。\\ \indent
 提案手法は、Fig. \ref{2-1_Image of centroid}のように2D-LiDARの距離データを画像化し、学習したYOLOv5の物体検出により画像から
-人の脚部を検出する。複数検出する場合があるため、検出する範囲を一定の位置に設定している。
+人の脚部を検出する。人以外の物体を誤検出する場合があるため、検出する範囲を固定位置に設定している。
 また、衝突回避機能を実装することで、安全性を考慮した人追従機能を提案している。\\ \indent
-実験方法は、追従実験と衝突回避実験がある。追従実験ではFig. \ref{2-1_Data Acquisition Environment} 3つの経路を設定し、1回のみの試行である。
-衝突回避実験では、人追従中に追従対象者とロボットとの間に障害物を設置し、停止したかを
-3つの状況に分けてそれぞれ10回試行している。実験結果は、追従実験では3つの経路において20[m]
+実験方法は、追従実験と衝突回避実験がある。追従実験ではFig. \ref{2-1_Data Acquisition Environment} のような3つの経路を設定し、1回のみの試行である。
+衝突回避実験では、人追従中に追従対象者とロボットとの間に障害物を設置し、停止したかを3つの状況に分けてそれぞれ10回ずつ試行している。実験結果は、追従実験では3つの経路において20[m]
 の人追従ができていたが、雑多な環境下では追従中に停止することがあった。
 衝突回避実験ではTable \ref{2-1_Success rate of emergency stops on each road}
 に示すように、すべての試行において衝突回避ができていた。
@@ -56,13 +55,13 @@ Fei Luoらの研究\cite{Temporal convolutional networks for multi-person activi
 では、密度ベースのクラスタリングアルゴリズムである
 DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
 を用いて距離データをクラスタリングする。\ref{2-2_LIDAR data processing}(c)では、
-Fig. \ref{2-2_Human recognition}のように定義した幾何学的特徴をもとにランダムフォレストにより、
+Fig. \ref{2-2_Human recognition}のように定義した幾何学的特徴を用いてランダムフォレストにより、
 人間と非人間の2つに分類する。Fig. \ref{2-2_LIDAR data processing}(c)では、カルマンフィルタを用いて
 人間が移動した軌跡を生成し、ガウスノイズなどの軌跡拡張が行われ、
-LSTM (Long Short-Term Memory)とTCN (Temporal Convolutional Network)の両方に入力される。
+LSTM (Long Short-Term Memory)とTCN (Temporal Convolutional Network)の両方に入力され、
 活動クラスに分類される。LSTMは、時間経過に伴って変化するデータを学習できる
 RNN(Recurrent Neural Network)の勾配消失問題を解消したものであり、TCNは時系列データに対して
-CNN (Convolutional Neural Network)を用いているものである。\\ \indent
+CNN (Convolutional Neural Network)を用いたものである。\\ \indent
 実験方法は、学習したLSTMとTCNを用いて、Fig. \ref{2-2_Kitchen scenario}のような環境において
 15種類の歩行パターンを分類させ、LSTMとTCNの分類精度の評価を行う。
 実験結果はTable \ref{2-2_THE EFFECT OF TRAJECTORY AUGMENTATION}のようになっており、
@@ -116,7 +115,7 @@ LSTMよりTCNのほうが分類精度が高いことが明らかになってい�
 では、FCN(Full Convolutional Neural Networks)を用いて、2D-LiDARの距離データ
 から人の両脚部分を検出することで人追従する「PeTra」を提案している。\\ \indent
 提案手法は、2D-LiDARからの距離データを画像化し、
-Fig. \ref{2-4_cnn}に示すアーキテクチャにより、人の両脚部分をセグメンテーション
+Fig. \ref{2-4_cnn}に示すアーキテクチャを用いて、人の両脚部分をセグメンテーション
 することにより、追従対象者を検出している。\\ \indent
 実験方法は、Fig. \ref{2-4_env}の左のような環境において、Location1、Location2、Location3
 で行われる。また、Fig. \ref{2-4_env}の右にあるタグを追従対象者が所持することにより、
@@ -183,11 +182,11 @@ Table \ref{2-4_result_table}から、LDよりPeTraの方が誤差が50\%少な�
 \section{AOAタグと2D-LiDARを組み合わせた手法}
 DAPING JINらの研究\cite{A Robust Autonomous Following Method for Mobile Robots in Dynamic Environments}
 では、Fig. \ref{2-3_real}のような環境を想定し、AOAタグと2D-LiDARのデータから人を検出している。\\ \indent
-提案手法は、システム全体はFig. \ref{2-3_system}のようになっており、2D-LiDARとAOAタグの
-データをカルマンフィルタを用いた追跡情報を統合することで人の位置を正確に追跡している。
+提案手法は、システム全体がFig. \ref{2-3_system}のようになっており、2D-LiDARとAOAタグの
+データからカルマンフィルタを用いた追跡軌跡を統合することで人の位置を正確に追跡している。
 ロボットの制御では、Dynamic Window Approachを改良したFMM-DWAを用いて
 障害物に衝突しないロボット制御を実装している。
-AOAタグは、位置情報を送信するデバイスであり、人にAOAタグを所持してもらい、ロボットが位置情報
+AOAタグは、位置情報を送信するデバイスであり、追従対象者がAOAタグを所持し、ロボットが位置情報
 を受信している。Fig. \ref{2-3_aoa}は、AOAタグとカルマンフィルタの追従軌跡を比較した
 ものであり、赤いデータがAOAタグ、黒いデータがカルマンフィルタのデータである。
 AOAタグはカルマンフィルタの追跡軌跡よりノイズが多いことがわかる。
@@ -205,8 +204,8 @@ Fig. \ref{2-3_laser}は、2D-LiDARとカルマンフィルタの追跡軌跡を�
 実験方法は、Fig. \ref{2-3_real}のような障害物がいくつかある環境において、
 モデル予測制御であるMPEPCとFMM-DWAによるロボット制御の比較である。
 実験結果をTable \ref{2-3_result_table}に示す。
-ロボット台車の加速度では、FMM-DWAにおける加速度が$1m/s^2$未満である場合が90\%以上であり、
-MPEPCにおける加速度が$1m/s^2$未満である場合が68\%であった。
+ロボット台車の加速度では、FMM-DWAにおける加速度が$1[m/s^2]$未満である場合が90\%以上であり、
+MPEPCにおける加速度が$1[m/s^2]$未満である場合が68\%であった。
 また、ロボット台車の旋回半径がMPEPCでは、1mより小さい制御コマンドは全体の8\%であり、
 FMM-DWAの2.6倍である。
 さらに、人の軌道とロボットの軌道の追跡率は、FMM-DWAが94\%であるのに対し、
@@ -306,8 +305,8 @@ MPEPCは95\%であり、明確な差はなかった。
 人の脚部が幾何学的特徴からの検出であり、脚部に類似している物体が乱雑に配置されていた場合、
 人の脚部ではない物体が誤検出されてしまう課題が考えられる。\\ \indent
 FCNと2D-LiDARを用いた手法とAOAタグと2D-LiDARを用いた手法では、
-物体が少ない綺麗な環境下での実験はされていないため、雑多な環境下での追従性能が不明である。
+物体が少ない環境下での実験であるため、雑多な環境下での追従性能が不明である。
 また、AOAタグと2D-LiDARを用いた手法では、人の脚部を幾何学的特徴を用いて検出しているため、
-雑多な環境下での追従性能の低下やAOAタグの紛失などの課題が考えれる。
+雑多な環境下での追従性能の低下が考えられる。さらに、AOAタグの紛失などの課題が考えれる。
 本プロジェクトでは、雑多な環境下において特定の人を追従し、
 ロボットの最大直進速度で追従し続けらるような人追従システムを提案する。
