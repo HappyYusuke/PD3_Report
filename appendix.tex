@@ -56,7 +56,7 @@
     # Pゲイン
     akp: 0.005
     # Iゲイン
-    aki: 0.0
+    aki: 0.0002
     # Dゲイン
     akd: 0.0009
 \end{lstlisting}
@@ -185,7 +185,7 @@ def main():
     rclpy.shutdown()
 \end{lstlisting}
 
-追従対象者を特定するソースコードを、ソースコード\ref{person}に示す。
+追従目標を特定するソースコードを、ソースコード\ref{person}に示す。
 \begin{lstlisting}[caption=person\_detector.py, label=person]
 import math
 import time
